@@ -13,12 +13,15 @@
 */
 //#include <stdint.h>
 #include "stm8s.h"
+#include <stdlib.h>
 
 #define LED_GPIO_PORT (GPIOB)
 #define LED_GPIO_PINS (GPIO_PIN_5)
 
 
 #define PWM_MODE_1 (6 << 4)
+
+#define OUT_SAMPLERATE 31372.5f
 
 // 8-bit sine-wave for a 392Hz tone (31372.5kHz / 80 samples)
 /*
@@ -139,11 +142,19 @@ void setup_sound(void)
     TIM2->CR1 |= TIM2_CR1_CEN;
 }
 
+struct synthVoice* makeVoice(uint16_t freq, uint16_t len, uint8_t amp, enum type voiceType){
+    struct synthVoice *sv = malloc(sizeof(struct synthVoice));
+    sv->phase = 0;
+    sv->period = (uint16_t)( OUT_SAMPLERATE /freq);
+    //sv->type = Sin;
+    return sv;
+}
+
 void Synth(struct synthVoice *sv){
     // period = SampleRate / frequency in samples
 
     
-    
+    nop();
 }
 
 /**

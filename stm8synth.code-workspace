@@ -32,19 +32,5 @@
             "editor.tabSize": 4,
             "editor.autoIndent": "advanced"
         }
-    },
-    "extensions": {
-        "recommendations": [
-            "cl.eide",
-            "keroc.hex-fmt",
-            "xiaoyongdong.srecord",
-            "hars.cppsnippets",
-            "zixuanwang.linkerscript",
-            "redhat.vscode-yaml",
-            "IBM.output-colorizer",
-            "cschlosser.doxdocgen",
-            "ms-vscode.vscode-serial-monitor",
-            "cl.stm8-debug"
-        ]
     }
 }
