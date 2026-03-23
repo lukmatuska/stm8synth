@@ -1,0 +1,1318 @@
+[2026-03-20 10:35:59]	[info] incremental build: 18 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_adc1.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_awu.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_beep.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_clk.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_exti.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_flash.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_gpio.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_i2c.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_itc.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_iwdg.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_rst.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_spi.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_tim1.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_tim2.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_tim4.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_uart1.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_wwdg.c': object (.o) file not exist
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': object (.o) file not exist
+
+[2026-03-20 10:36:00]	[done]
+	build successfully !
+
+[2026-03-20 10:38:03]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:38:04]	compilation failed at : "/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:34: warning 278: return type of function omitted, assuming int
+./src/main.c:36: error 20: Undefined identifier 'TIM2_CCR3L'
+./src/main.c:37: error 20: Undefined identifier 'TIM2_SR1'
+./src/main.c:37: error 20: Undefined identifier 'TIM_SR1_UIF'
+-:0: warning 85: in function ISR unreferenced function argument : 'timer2_isr'
+-:0: warning 85: in function ISR unreferenced function argument : 'TIM2_OVR_UIF_vector'
+./src/main.c:42: warning 283: function declarator with no prototype
+./src/main.c:53: error 20: Undefined identifier 'TIM2_ARRH'
+./src/main.c:54: error 20: Undefined identifier 'TIM2_ARRL'
+./src/main.c:59: error 20: Undefined identifier 'TIM2_CCMR3'
+./src/main.c:60: error 20: Undefined identifier 'TIM2_CCER2'
+./src/main.c:63: error 20: Undefined identifier 'TIM2_IER'
+./src/main.c:63: error 20: Undefined identifier 'TIM_IER_UIE'
+./src/main.c:65: error 20: Undefined identifier 'TIM2_CR1'
+./src/main.c:65: error 20: Undefined identifier 'TIM_CR1_CEN'
+
+[2026-03-20 10:38:21]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:38:21]	compilation failed at : "/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:34: warning 278: return type of function omitted, assuming int
+./src/main.c:36: error 20: Undefined identifier 'TIM2_CCR3L'
+./src/main.c:37: error 20: Undefined identifier 'TIM2_SR1'
+./src/main.c:37: error 20: Undefined identifier 'TIM_SR1_UIF'
+-:0: warning 85: in function ISR unreferenced function argument : 'timer2_isr'
+-:0: warning 85: in function ISR unreferenced function argument : 'TIM2_OVR_UIF_vector'
+./src/main.c:42: warning 283: function declarator with no prototype
+./src/main.c:53: error 20: Undefined identifier 'TIM2_ARRH'
+./src/main.c:54: error 20: Undefined identifier 'TIM2_ARRL'
+./src/main.c:59: error 20: Undefined identifier 'TIM2_CCMR3'
+./src/main.c:60: error 20: Undefined identifier 'TIM2_CCER2'
+./src/main.c:63: error 20: Undefined identifier 'TIM2_IER'
+./src/main.c:63: error 20: Undefined identifier 'TIM_IER_UIE'
+./src/main.c:65: error 20: Undefined identifier 'TIM2_CR1'
+./src/main.c:65: error 20: Undefined identifier 'TIM_CR1_CEN'
+
+[2026-03-20 10:45:08]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:45:08]	compilation failed at : "/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:39: error 20: Undefined identifier 'TIM2_CCR3L'
+./src/main.c:42: error 20: Undefined identifier 'TIM2_SR1'
+./src/main.c:53: error 20: Undefined identifier 'TIM2_ARRH'
+./src/main.c:54: error 20: Undefined identifier 'TIM2_ARRL'
+./src/main.c:57: error 20: Undefined identifier 'TIM2_CCMR3'
+./src/main.c:60: error 20: Undefined identifier 'TIM2_CCER2'
+./src/main.c:63: error 20: Undefined identifier 'TIM2_IER'
+./src/main.c:66: error 20: Undefined identifier 'TIM2_CR1'
+
+[2026-03-20 10:51:28]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:51:28]	compilation failed at : "/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:53: error 20: Undefined identifier 'TIM2_ARRH'
+./src/main.c:54: error 20: Undefined identifier 'TIM2_ARRL'
+./src/main.c:57: error 20: Undefined identifier 'TIM2_CCMR3'
+./src/main.c:60: error 20: Undefined identifier 'TIM2_CCER2'
+./src/main.c:63: error 20: Undefined identifier 'TIM2_IER'
+./src/main.c:66: error 20: Undefined identifier 'TIM2_CR1'
+
+[2026-03-20 10:51:50]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:51:50]	[done]
+	build successfully !
+
+[2026-03-20 10:52:35]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:52:35]	[done]
+	build successfully !
+
+[2026-03-20 10:52:48]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:52:48]	[done]
+	build successfully !
+
+[2026-03-20 10:53:18]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:53:19]	[done]
+	build successfully !
+
+[2026-03-20 10:53:35]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:53:35]	[done]
+	build successfully !
+
+[2026-03-20 10:54:36]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:54:36]	compilation failed at : "/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:81: syntax error: token -> 'LED' ; column 13
+
+[2026-03-20 10:55:02]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:55:02]	[done]
+	build successfully !
+
+[2026-03-20 10:55:16]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:55:16]	[done]
+	build successfully !
+
+[2026-03-20 10:55:36]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:55:37]	[done]
+	build successfully !
+
+[2026-03-20 10:55:42]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:55:43]	[done]
+	build successfully !
+
+[2026-03-20 10:56:43]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:56:43]	[done]
+	build successfully !
+
+[2026-03-20 10:57:00]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:57:00]	[done]
+	build successfully !
+
+[2026-03-20 10:57:16]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:57:16]	[done]
+	build successfully !
+
+[2026-03-20 10:58:23]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 10:58:23]	[done]
+	build successfully !
+
+[2026-03-20 13:05:01]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:05:01]	[done]
+	build successfully !
+
+[2026-03-20 13:05:27]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:05:27]	[done]
+	build successfully !
+
+[2026-03-20 13:05:33]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:05:34]	[done]
+	build successfully !
+
+[2026-03-20 13:05:40]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:05:40]	[done]
+	build successfully !
+
+[2026-03-20 13:05:57]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:05:58]	[done]
+	build successfully !
+
+[2026-03-20 13:06:06]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:06:06]	[done]
+	build successfully !
+
+[2026-03-20 13:06:20]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:06:20]	[done]
+	build successfully !
+
+[2026-03-20 13:06:29]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:06:29]	[done]
+	build successfully !
+
+[2026-03-20 13:06:37]	[done]
+	build successfully !
+
+[2026-03-20 13:06:50]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:06:50]	[done]
+	build successfully !
+
+[2026-03-20 13:09:07]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:09:07]	compilation failed at : "/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:52: error 10: 'lvalue' required for 'assignment' operation.
+
+[2026-03-20 13:09:43]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:09:43]	compilation failed at : "/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:52: error 10: 'lvalue' required for 'assignment' operation.
+
+[2026-03-20 13:10:15]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:10:15]	compilation failed at : "/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:52: error 26: '_PSCRL' not a structure/union member
+
+[2026-03-20 13:10:27]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:10:27]	[done]
+	build successfully !
+
+[2026-03-20 13:10:35]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:10:35]	[done]
+	build successfully !
+
+[2026-03-20 13:10:45]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:10:46]	[done]
+	build successfully !
+
+[2026-03-20 13:11:07]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:11:07]	[done]
+	build successfully !
+
+[2026-03-20 13:22:57]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:22:57]	[done]
+	build successfully !
+
+[2026-03-20 13:23:07]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:23:07]	[done]
+	build successfully !
+
+[2026-03-20 13:23:34]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:23:34]	compilation failed at : "/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:52: error 26: '_PSCRH' not a structure/union member
+
+[2026-03-20 13:23:45]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:23:45]	compilation failed at : "/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:52: error 26: '_PSCRL' not a structure/union member
+
+[2026-03-20 13:24:20]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:24:20]	compilation failed at : "/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:52: syntax error: token -> '(' ; column 32
+
+[2026-03-20 13:24:27]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:24:27]	compilation failed at : "/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:52: error 26: '_PSCR_PSC' not a structure/union member
+
+[2026-03-20 13:24:33]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:24:33]	compilation failed at : "/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:52: error 10: 'lvalue' required for 'assignment' operation.
+
+[2026-03-20 13:25:30]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:25:30]	compilation failed at : "/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:52: error 26: '_PSCRH' not a structure/union member
+./src/main.c:53: error 26: '_PSCRL' not a structure/union member
+
+[2026-03-20 13:27:22]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:27:22]	[done]
+	build successfully !
+
+[2026-03-20 13:27:32]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:27:32]	[done]
+	build successfully !
+
+[2026-03-20 13:27:45]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:27:45]	[done]
+	build successfully !
+
+[2026-03-20 13:27:50]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:27:50]	[done]
+	build successfully !
+
+[2026-03-20 13:27:57]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:27:58]	[done]
+	build successfully !
+
+[2026-03-20 13:28:02]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:28:02]	[done]
+	build successfully !
+
+[2026-03-20 13:28:19]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:28:19]	[done]
+	build successfully !
+
+[2026-03-20 13:28:34]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:28:34]	[done]
+	build successfully !
+
+[2026-03-20 13:28:42]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:28:43]	[done]
+	build successfully !
+
+[2026-03-20 13:29:03]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:29:03]	[done]
+	build successfully !
+
+[2026-03-20 13:29:14]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:29:14]	[done]
+	build successfully !
+
+[2026-03-20 13:29:24]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:29:24]	[done]
+	build successfully !
+
+[2026-03-20 13:29:29]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:29:30]	[done]
+	build successfully !
+
+[2026-03-20 13:29:38]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:29:39]	[done]
+	build successfully !
+
+[2026-03-20 13:29:55]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:29:55]	[done]
+	build successfully !
+
+[2026-03-20 13:30:03]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:30:03]	[done]
+	build successfully !
+
+[2026-03-20 13:30:09]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:30:09]	[done]
+	build successfully !
+
+[2026-03-20 13:30:16]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:30:16]	[done]
+	build successfully !
+
+[2026-03-20 13:31:15]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:31:15]	[done]
+	build successfully !
+
+[2026-03-20 13:31:22]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:31:23]	[done]
+	build successfully !
+
+[2026-03-20 13:31:33]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:31:33]	[done]
+	build successfully !
+
+[2026-03-20 13:31:45]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:31:45]	[done]
+	build successfully !
+
+[2026-03-20 13:31:52]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:31:52]	[done]
+	build successfully !
+
+[2026-03-20 13:32:19]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:32:19]	[done]
+	build successfully !
+
+[2026-03-20 13:32:42]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:32:42]	[done]
+	build successfully !
+
+[2026-03-20 13:33:47]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:33:47]	[done]
+	build successfully !
+
+[2026-03-20 13:33:59]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:33:59]	[done]
+	build successfully !
+
+[2026-03-20 13:34:17]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:34:17]	[done]
+	build successfully !
+
+[2026-03-20 13:34:32]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:34:32]	[done]
+	build successfully !
+
+[2026-03-20 13:34:35]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:34:35]	[done]
+	build successfully !
+
+[2026-03-20 13:35:01]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:35:01]	[done]
+	build successfully !
+
+[2026-03-20 13:35:25]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:35:25]	[done]
+	build successfully !
+
+[2026-03-20 13:35:38]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:35:38]	[done]
+	build successfully !
+
+[2026-03-20 13:35:54]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:35:54]	[done]
+	build successfully !
+
+[2026-03-20 13:36:28]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:36:28]	[done]
+	build successfully !
+
+[2026-03-20 13:36:39]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:36:39]	[done]
+	build successfully !
+
+[2026-03-20 13:36:55]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:36:55]	[done]
+	build successfully !
+
+[2026-03-20 13:37:22]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:37:22]	[done]
+	build successfully !
+
+[2026-03-20 13:37:49]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:37:50]	[done]
+	build successfully !
+
+[2026-03-20 13:38:10]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:38:10]	[done]
+	build successfully !
+
+[2026-03-20 13:38:26]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:38:26]	[done]
+	build successfully !
+
+[2026-03-20 13:38:45]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:38:45]	[done]
+	build successfully !
+
+[2026-03-20 13:39:03]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:39:03]	[done]
+	build successfully !
+
+[2026-03-20 13:39:14]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:39:14]	[done]
+	build successfully !
+
+[2026-03-20 13:39:50]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:39:51]	[done]
+	build successfully !
+
+[2026-03-20 13:40:10]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:40:10]	[done]
+	build successfully !
+
+[2026-03-20 13:40:29]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:40:29]	[done]
+	build successfully !
+
+[2026-03-20 13:40:56]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:40:56]	[done]
+	build successfully !
+
+[2026-03-20 13:41:06]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-20 13:41:06]	[done]
+	build successfully !
+
+[2026-03-21 06:10:11]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:10:11]	[done]
+	build successfully !
+
+[2026-03-21 06:10:55]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:10:55]	[done]
+	build successfully !
+
+[2026-03-21 06:11:15]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:11:15]	[done]
+	build successfully !
+
+[2026-03-21 06:11:28]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:11:29]	[done]
+	build successfully !
+
+[2026-03-21 06:11:43]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:11:44]	[done]
+	build successfully !
+
+[2026-03-21 06:12:01]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:12:01]	[done]
+	build successfully !
+
+[2026-03-21 06:12:08]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:12:08]	[done]
+	build successfully !
+
+[2026-03-21 06:12:13]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:12:13]	[done]
+	build successfully !
+
+[2026-03-21 06:12:18]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:12:18]	[done]
+	build successfully !
+
+[2026-03-21 06:12:22]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:12:22]	[done]
+	build successfully !
+
+[2026-03-21 06:12:43]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:12:43]	[done]
+	build successfully !
+
+[2026-03-21 06:12:48]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:12:48]	[done]
+	build successfully !
+
+[2026-03-21 06:13:03]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:13:03]	[done]
+	build successfully !
+
+[2026-03-21 06:13:08]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:13:09]	[done]
+	build successfully !
+
+[2026-03-21 06:13:16]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:13:16]	[done]
+	build successfully !
+
+[2026-03-21 06:13:22]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:13:22]	[done]
+	build successfully !
+
+[2026-03-21 06:13:40]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:13:40]	[done]
+	build successfully !
+
+[2026-03-21 06:13:55]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:13:55]	[done]
+	build successfully !
+
+[2026-03-21 06:14:21]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:14:21]	[done]
+	build successfully !
+
+[2026-03-21 06:14:39]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:14:39]	[done]
+	build successfully !
+
+[2026-03-21 06:14:52]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:14:52]	[done]
+	build successfully !
+
+[2026-03-21 06:16:14]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:16:14]	[done]
+	build successfully !
+
+[2026-03-21 06:16:21]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:16:22]	[done]
+	build successfully !
+
+[2026-03-21 06:20:09]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:20:09]	[done]
+	build successfully !
+
+[2026-03-21 06:20:20]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:20:21]	[done]
+	build successfully !
+
+[2026-03-21 06:20:57]	[done]
+	build successfully !
+
+[2026-03-21 06:21:28]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:21:28]	[done]
+	build successfully !
+
+[2026-03-21 06:22:59]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:22:59]	[done]
+	build successfully !
+
+[2026-03-21 06:23:25]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:23:25]	[done]
+	build successfully !
+
+[2026-03-21 06:23:40]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:23:40]	[done]
+	build successfully !
+
+[2026-03-21 06:28:14]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:28:15]	[done]
+	build successfully !
+
+[2026-03-21 06:29:41]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 06:29:41]	[done]
+	build successfully !
+
+[2026-03-21 10:22:48]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 10:22:48]	[done]
+	build successfully !
+
+[2026-03-21 10:23:38]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 10:23:38]	[done]
+	build successfully !
+
+[2026-03-21 10:37:42]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 10:37:43]	[done]
+	build successfully !
+
+[2026-03-21 10:38:05]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 10:38:05]	[done]
+	build successfully !
+
+[2026-03-21 10:38:20]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 10:38:20]	[done]
+	build successfully !
+
+[2026-03-21 10:38:42]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-21 10:38:42]	[done]
+	build successfully !
+
+[2026-03-21 10:39:10]	[done]
+	build successfully !
+
+[2026-03-21 10:39:44]	[info] incremental build: 18 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_adc1.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_awu.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_beep.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_clk.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_exti.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_flash.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_gpio.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_i2c.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_itc.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_iwdg.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_rst.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_spi.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_tim1.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_tim2.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_tim4.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_uart1.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_wwdg.c': compiler options has been changed.
+'/home/lcrm/Documents/C/STM/stm8s_sdcc-quickstart/src/main.c': compiler options has been changed.
+
+[2026-03-21 10:39:45]	[done]
+	build successfully !
+
+[2026-03-23 08:37:06]	[info] incremental build: 18 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_adc1.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_awu.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_beep.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_clk.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_exti.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_flash.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_gpio.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_i2c.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_itc.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_iwdg.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_rst.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_spi.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_tim1.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_tim2.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_tim4.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_uart1.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/libraries/STM8S_StdPeriph_Driver/source/stm8s_wwdg.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-23 08:37:08]	compilation failed at : "/home/lcrm/Documents/C/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 --opt-code-size -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:70: error 141: two or more data types in declaration for 'type_specifier_qualifier declaration_specifiers - skipped'
+./src/main.c:71: syntax error: token -> '*' ; column 12
+
+[2026-03-23 08:38:07]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-23 08:38:07]	compilation failed at : "/home/lcrm/Documents/C/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 --opt-code-size -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:70: error 141: two or more data types in declaration for 'type_specifier_qualifier declaration_specifiers - skipped'
+./src/main.c:71: syntax error: token -> '*' ; column 12
+
+[2026-03-23 08:39:04]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-23 08:39:04]	compilation failed at : "/home/lcrm/Documents/C/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 --opt-code-size -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:71: syntax error: token -> '*' ; column 12
+
+[2026-03-23 08:41:04]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-23 08:41:04]	compilation failed at : "/home/lcrm/Documents/C/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 --opt-code-size -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:71: syntax error: token -> '*' ; column 12
+
+[2026-03-23 08:42:21]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-23 08:42:21]	compilation failed at : "/home/lcrm/Documents/C/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 --opt-code-size -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:71: syntax error: token -> '*' ; column 19
+
+[2026-03-23 08:42:57]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-23 08:42:57]	compilation failed at : "/home/lcrm/Documents/C/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 --opt-code-size -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:71: syntax error: token -> '*' ; column 19
+
+[2026-03-23 08:43:40]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-23 08:43:40]	compilation failed at : "/home/lcrm/Documents/C/stm8s_sdcc-quickstart/src/main.c", exit code: 1
+command: 
+  "/usr/bin/sdcc" -c --std-c99 -Ilibraries/STM8S_StdPeriph_Driver/include -Ilibraries/STM8S_StdPeriph_Driver -Isrc -DSTM8S103 -mstm8 --opt-code-size -MMD -o ./build/Debug/.obj/src/main.rel ./src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./src/main.c:146: error 58: void function returning value
+./src/main.c:146: warning 85: in function Synth unreferenced function argument : 'sv'
+
+[2026-03-23 08:44:06]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/stm8s_sdcc-quickstart/src/main.c': source file has been changed.
+
+[2026-03-23 08:44:06]	[done]
+	build successfully !
+
+[2026-03-23 08:52:15]	[info] incremental build: 18 source files changed
+These source files will be recompiled
+---
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_adc1.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_awu.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_beep.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_clk.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_exti.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_flash.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_gpio.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_i2c.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_itc.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_iwdg.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_rst.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_spi.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_tim1.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_tim2.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_tim4.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_uart1.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/libraries/STM8S_StdPeriph_Driver/source/stm8s_wwdg.c': compiler options has been changed.
+'/home/lcrm/Documents/C/stm8synth/src/main.c': source file has been changed.
+
+[2026-03-23 08:52:16]	[done]
+	build successfully !
+

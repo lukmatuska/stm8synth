@@ -1,0 +1,88 @@
+{
+    "name": "stm8s103f3_quickstart_sdcc",
+    "target": "Debug",
+    "toolchain": "SDCC",
+    "toolchainLocation": "/usr",
+    "toolchainCfgFile": "/home/lcrm/.vscode-oss/extensions/cl.eide-3.26.5-universal/res/data/models/sdcc.model.json",
+    "buildMode": "fast|multhread",
+    "showRepathOnLog": true,
+    "threadNum": 6,
+    "rootDir": "/home/lcrm/Documents/C/stm8synth",
+    "dumpPath": "build/Debug",
+    "outDir": "build/Debug",
+    "incDirs": [
+        "libraries/STM8S_StdPeriph_Driver/include",
+        "libraries/STM8S_StdPeriph_Driver",
+        "src"
+    ],
+    "libDirs": [],
+    "defines": [
+        "STM8S103"
+    ],
+    "sourceList": [
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_adc1.c",
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_awu.c",
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_beep.c",
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_clk.c",
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_exti.c",
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_flash.c",
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_gpio.c",
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_i2c.c",
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_itc.c",
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_iwdg.c",
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_rst.c",
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_spi.c",
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_tim1.c",
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_tim2.c",
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_tim4.c",
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_uart1.c",
+        "libraries/STM8S_StdPeriph_Driver/source/stm8s_wwdg.c",
+        "src/main.c"
+    ],
+    "alwaysInBuildSources": [],
+    "sourceParams": {},
+    "options": {
+        "version": 3,
+        "afterBuildTasks": [],
+        "asm-compiler": {
+            "$toolName": "sdasstm8"
+        },
+        "beforeBuildTasks": [],
+        "c/cpp-compiler": {
+            "language-c": "c99"
+        },
+        "global": {
+            "device": "stm8",
+            "optimize-type": "size"
+        },
+        "linker": {
+            "$mainFileName": "main",
+            "output-format": "hex",
+            "output-lib": false
+        }
+    },
+    "env": {
+        "workspaceFolder": "/home/lcrm/Documents/C/stm8synth",
+        "workspaceFolderBasename": "stm8synth",
+        "OutDir": "/home/lcrm/Documents/C/stm8synth/build/Debug",
+        "OutDirRoot": "build",
+        "OutDirBase": "build/Debug",
+        "ProjectName": "stm8s103f3_quickstart_sdcc",
+        "ConfigName": "Debug",
+        "ProjectRoot": "/home/lcrm/Documents/C/stm8synth",
+        "ExecutableName": "/home/lcrm/Documents/C/stm8synth/build/Debug/stm8s103f3_quickstart_sdcc",
+        "ChipPackDir": "",
+        "ChipName": "",
+        "SYS_Platform": "linux",
+        "SYS_DirSep": "/",
+        "SYS_DirSeparator": "/",
+        "SYS_PathSep": ":",
+        "SYS_PathSeparator": ":",
+        "SYS_EOL": "\n",
+        "EIDE_BUILDER_DIR": "/home/lcrm/.vscode-oss/extensions/cl.eide-3.26.5-universal/res/tools/linux/unify_builder",
+        "EIDE_BINARIES_VER": "12.1.0",
+        "EIDE_PY3_CMD": "/usr/sbin/python3",
+        "ToolchainRoot": "/usr"
+    },
+    "sysPaths": []
+}

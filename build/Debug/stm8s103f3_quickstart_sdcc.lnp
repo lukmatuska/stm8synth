@@ -1,0 +1,1 @@
+--out-fmt-ihx -mstm8 -o ./build/Debug/stm8s103f3_quickstart_sdcc.ihx ./build/Debug/.obj/src/main.rel ./build/Debug/no_entry_bundled.lib

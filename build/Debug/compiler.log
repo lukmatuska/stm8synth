@@ -1,0 +1,8 @@
+>>> cc
+
+./libraries/STM8S_StdPeriph_Driver/source/stm8s_itc.c:61: warning 59: function 'ITC_GetCPUCC' must return value
+./src/main.c:147: warning 85: in function Synth unreferenced function argument : 'sv'
+./libraries/STM8S_StdPeriph_Driver/source/stm8s_tim2.c:1110: warning 116: right shifting more than size of object changed to zero
+
+>>> ld
+
