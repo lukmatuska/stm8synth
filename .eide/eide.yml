@@ -1,0 +1,81 @@
+version: "4.1"
+name: stm8s103f3_quickstart_sdcc
+type: C51
+deviceName: null
+packDir: null
+srcDirs: []
+virtualFolder:
+  name: <virtual_root>
+  files: []
+  folders:
+    - name: Application
+      files:
+        - path: src/main.c
+      folders: []
+    - name: Libraries
+      files: []
+      folders:
+        - name: STM8S_StdPeriph_Driver
+          files:
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_adc1.c
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_awu.c
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_beep.c
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_clk.c
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_exti.c
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_flash.c
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_gpio.c
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_i2c.c
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_itc.c
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_iwdg.c
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_rst.c
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_spi.c
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_tim1.c
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_tim2.c
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_tim4.c
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_uart1.c
+            - path: libraries/STM8S_StdPeriph_Driver/source/stm8s_wwdg.c
+          folders: []
+dependenceList: []
+outDir: build
+miscInfo:
+  uid: 1649e486a1b527e0ae5028a1abe6d597
+targets:
+  Debug:
+    cppPreprocessAttrs:
+      defineList:
+        - STM8S103
+      incList:
+        - libraries/STM8S_StdPeriph_Driver/include
+        - libraries/STM8S_StdPeriph_Driver
+        - src
+      libList: []
+    excludeList:
+      - <virtual_root>/Libraries/stm8s103.lib
+    toolchain: SDCC
+    toolchainConfigMap:
+      SDCC:
+        options:
+          version: 3
+          afterBuildTasks: []
+          asm-compiler: {}
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            language-c: c99
+          global:
+            device: stm8
+            optimize-type: balanced
+          linker:
+            $mainFileName: main
+            output-format: hex
+            output-lib: false
+    uploadConfigMap:
+      Custom:
+        bin: stm8flash
+        commandLine: stm8flash -c stlinkv2 -p stm8s103f3 -w ${ExecutableName}.hex
+        eraseChipCommand: ""
+      STVP:
+        deviceName: STM8S103F3
+        bin: .\build\Release\stm8s103f3_sdcc_quickstart.hex
+        eepromFile: "null"
+        optionByteFile: "null"
+    uploader: Custom

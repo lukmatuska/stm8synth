@@ -53,7 +53,7 @@
         },
         "global": {
             "device": "stm8",
-            "optimize-type": "size"
+            "optimize-type": "balanced"
         },
         "linker": {
             "$mainFileName": "main",
