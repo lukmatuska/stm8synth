@@ -1,9 +1,8 @@
 >>> cc
 
-./src/main.c:150: warning 85: in function makeVoice unreferenced function argument : 'len'
-./src/main.c:150: warning 85: in function makeVoice unreferenced function argument : 'amp'
-./src/main.c:150: warning 85: in function makeVoice unreferenced function argument : 'voiceType'
-./src/main.c:157: warning 85: in function Synth unreferenced function argument : 'sv'
+./src/main.c:151: warning 85: in function makeVoice unreferenced function argument : 'len'
+./src/main.c:151: warning 85: in function makeVoice unreferenced function argument : 'amp'
+./src/main.c:280: warning 24: index 200 is outside of the array bounds (array size is 64)
 
 >>> ld
 

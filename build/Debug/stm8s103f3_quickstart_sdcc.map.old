@@ -7,7 +7,7 @@ Area                                    Addr        Size        Decimal Bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000000  .__.ABS.                           _divulong
+     00000000  .__.ABS.                           _fslt
      00000000  l_CABS                          
      00000000  l_DABS                          
      00000000  l__CODE                         
@@ -16,22 +16,22 @@ Area                                    Addr        Size        Decimal Bytes (A
      00000000  s__CODE                         
      00000001  l_SSEG                          
      00000001  s_DATA                          
-     00000002  l_INITIALIZED                   
-     00000002  l_INITIALIZER                   
      00000003  l_GSFINAL                       
      00000026  l_GSINIT                        
+     00000033  l_INITIALIZED                   
+     00000033  l_INITIALIZER                   
      00000043  l_HOME                          
      0000008C  l_CONST                         
      00000402  l_DATA                          
      00000403  s_INITIALIZED                   
-     00000405  s_SSEG                          
-     00000A9C  l_CODE                          
+     00000436  s_SSEG                          
+     00000D1C  l_CODE                          
      00008000  s_HOME                          
      00008043  s_GSINIT                        
      00008069  s_GSFINAL                       
      0000806C  s_CONST                         
      000080F8  s_INITIALIZER                   
-     000080FA  s_CODE                          
+     0000812B  s_CODE                          
 
 ASxxxx Linker V03.00/V05.40 + sdld,  page 2.
 Hexadecimal  [32-Bits]
@@ -50,19 +50,22 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-INITIALIZED                         00000403    00000002 =           2. bytes (REL,CON)
+INITIALIZED                         00000403    00000033 =          51. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000403  _buf_clr                           main
-     00000404  _audio_buf                         main
+     00000403  _audio_idx                         main
+     00000404  _buf_clr                           main
+     00000405  _audio_bufA                        main
+     0000041D  _audio_bufB                        main
+     00000435  _buf_idx                           main
 
 ASxxxx Linker V03.00/V05.40 + sdld,  page 4.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-SSEG                                00000405    00000001 =           1. bytes (REL,CON)
+SSEG                                00000436    00000001 =           1. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -110,7 +113,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-INITIALIZER                         000080F8    00000002 =           2. bytes (REL,CON)
+INITIALIZER                         000080F8    00000033 =          51. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -119,90 +122,94 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-CODE                                000080FA    00000A9C =        2716. bytes (REL,CON)
+CODE                                0000812B    00000D1C =        3356. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     000080FA  _main                              main
-     00008116  _DelayInit                         main
-     00008129  _DelayMs                           main
-     00008141  _setup_sound                       main
-     0000815E  _makeVoice                         main
-     00008198  _Synth                             main
-     0000819A  _TRAP_IRQHandler                   main
-     000081A0  __this_is_a_example                main
-     000081A1  _TIM2_UPD_OVF_BRK_IRQHandler       main
-     000081AF  _GPIO_DeInit                       stm8s_gpio
-     000081BC  _GPIO_Init                         stm8s_gpio
-     00008237  _GPIO_Write                        stm8s_gpio
-     00008239  _GPIO_WriteHigh                    stm8s_gpio
-     00008242  _GPIO_WriteLow                     stm8s_gpio
-     0000824E  _GPIO_WriteReverse                 stm8s_gpio
-     00008257  _GPIO_ReadOutputData               stm8s_gpio
-     00008259  _GPIO_ReadInputData                stm8s_gpio
-     0000825C  _GPIO_ReadInputPin                 stm8s_gpio
-     00008269  _GPIO_ExternalPullUpConfig         stm8s_gpio
-     00008283  ___sdcc_heap_init                  malloc
-     00008297  _malloc                            malloc
-     00008327  _CLK_DeInit                        stm8s_clk
-     0000835D  _CLK_FastHaltWakeUpCmd             stm8s_clk
-     00008375  _CLK_HSECmd                        stm8s_clk
-     0000838D  _CLK_HSICmd                        stm8s_clk
-     000083A5  _CLK_LSICmd                        stm8s_clk
-     000083BD  _CLK_CCOCmd                        stm8s_clk
-     000083D5  _CLK_ClockSwitchCmd                stm8s_clk
-     000083ED  _CLK_SlowActiveHaltWakeUpCmd       stm8s_clk
-     00008405  _CLK_PeripheralClockConfig         stm8s_clk
-     0000844F  _CLK_ClockSwitchConfig             stm8s_clk
-     00008504  _CLK_HSIPrescalerConfig            stm8s_clk
-     00008519  _CLK_CCOConfig                     stm8s_clk
-     00008532  _CLK_ITConfig                      stm8s_clk
-     00008583  _CLK_SYSCLKConfig                  stm8s_clk
-     000085B3  _CLK_SWIMConfig                    stm8s_clk
-     000085CB  _CLK_ClockSecuritySystemEnable     stm8s_clk
-     000085D0  _CLK_GetSYSCLKSource               stm8s_clk
-     000085D4  _CLK_GetClockFreq                  stm8s_clk
-     00008617  _CLK_AdjustHSICalibrationValue     stm8s_clk
-     00008626  _CLK_SYSCLKEmergencyClear          stm8s_clk
-     0000862B  _CLK_GetFlagStatus                 stm8s_clk
-     00008675  _CLK_GetITStatus                   stm8s_clk
-     0000869A  _CLK_ClearITPendingBit             stm8s_clk
-     000086A8  ___uint2fs                         _uint2fs
-     000086B3  ___fs2uint                         _fs2uint
-     000086D3  _TIM4_DeInit                       stm8s_tim4
-     000086EC  _TIM4_TimeBaseInit                 stm8s_tim4
-     000086F8  _TIM4_Cmd                          stm8s_tim4
-     00008710  _TIM4_ITConfig                     stm8s_tim4
+     0000812B  _main                              main
+     00008144  _DelayInit                         main
+     00008157  _DelayMs                           main
+     0000816F  _setup_sound                       main
+     0000818C  _makeVoice                         main
+     000081CC  _fillBuf                           main
+     00008328  _Synth                             main
+     0000833D  _TRAP_IRQHandler                   main
+     00008343  __this_is_a_example                main
+     00008344  _TIM2_UPD_OVF_BRK_IRQHandler       main
+     00008370  _GPIO_DeInit                       stm8s_gpio
+     0000837D  _GPIO_Init                         stm8s_gpio
+     000083F8  _GPIO_Write                        stm8s_gpio
+     000083FA  _GPIO_WriteHigh                    stm8s_gpio
+     00008403  _GPIO_WriteLow                     stm8s_gpio
+     0000840F  _GPIO_WriteReverse                 stm8s_gpio
+     00008418  _GPIO_ReadOutputData               stm8s_gpio
+     0000841A  _GPIO_ReadInputData                stm8s_gpio
+     0000841D  _GPIO_ReadInputPin                 stm8s_gpio
+     0000842A  _GPIO_ExternalPullUpConfig         stm8s_gpio
+     00008444  ___muluint2ulong                   
+     0000844A  ___mulsint2slong                   
+     0000849B  ___sdcc_heap_init                  malloc
+     000084AF  _malloc                            malloc
+     0000853F  __mulint                           
+     0000855C  _CLK_DeInit                        stm8s_clk
+     00008592  _CLK_FastHaltWakeUpCmd             stm8s_clk
+     000085AA  _CLK_HSECmd                        stm8s_clk
+     000085C2  _CLK_HSICmd                        stm8s_clk
+     000085DA  _CLK_LSICmd                        stm8s_clk
+     000085F2  _CLK_CCOCmd                        stm8s_clk
+     0000860A  _CLK_ClockSwitchCmd                stm8s_clk
+     00008622  _CLK_SlowActiveHaltWakeUpCmd       stm8s_clk
+     0000863A  _CLK_PeripheralClockConfig         stm8s_clk
+     00008684  _CLK_ClockSwitchConfig             stm8s_clk
+     00008739  _CLK_HSIPrescalerConfig            stm8s_clk
+     0000874E  _CLK_CCOConfig                     stm8s_clk
+     00008767  _CLK_ITConfig                      stm8s_clk
+     000087B8  _CLK_SYSCLKConfig                  stm8s_clk
+     000087E8  _CLK_SWIMConfig                    stm8s_clk
+     00008800  _CLK_ClockSecuritySystemEnable     stm8s_clk
+     00008805  _CLK_GetSYSCLKSource               stm8s_clk
+     00008809  _CLK_GetClockFreq                  stm8s_clk
+     0000884C  _CLK_AdjustHSICalibrationValue     stm8s_clk
+     0000885B  _CLK_SYSCLKEmergencyClear          stm8s_clk
+     00008860  _CLK_GetFlagStatus                 stm8s_clk
+     000088AA  _CLK_GetITStatus                   stm8s_clk
+     000088CF  _CLK_ClearITPendingBit             stm8s_clk
+     000088DD  __divulong                         _divulong
+     00008938  ___uint2fs                         _uint2fs
 ASxxxx Linker V03.00/V05.40 + sdld,  page 11.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-CODE                                000080FA    00000A9C =        2716. bytes (REL,CON)
+CODE                                0000812B    00000D1C =        3356. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     0000872E  _TIM4_UpdateDisableConfig          stm8s_tim4
-     00008746  _TIM4_UpdateRequestConfig          stm8s_tim4
-     0000875E  _TIM4_SelectOnePulseMode           stm8s_tim4
-     00008776  _TIM4_PrescalerConfig              stm8s_tim4
-     00008781  _TIM4_ARRPreloadConfig             stm8s_tim4
-     00008799  _TIM4_GenerateEvent                stm8s_tim4
-     0000879D  _TIM4_SetCounter                   stm8s_tim4
-     000087A1  _TIM4_SetAutoreload                stm8s_tim4
-     000087A5  _TIM4_GetCounter                   stm8s_tim4
-     000087A9  _TIM4_GetPrescaler                 stm8s_tim4
-     000087AD  _TIM4_GetFlagStatus                stm8s_tim4
-     000087BD  _TIM4_ClearFlag                    stm8s_tim4
-     000087C2  _TIM4_GetITStatus                  stm8s_tim4
-     000087E3  _TIM4_ClearITPendingBit            stm8s_tim4
-     000087E8  ___sdcc_external_startup           _startup
-     0000894A  ___fsdiv                           _fsdiv
-     000089B1  ___fs2ulong                        _fs2ulong
-     00008A22  ___ulong2fs                        _ulong2fs
-     00008AB4  ___fslt                            _fslt
-     00008B3B  __divulong                         _divulong
-
+     00008943  ___fs2uint                         _fs2uint
+     00008963  _TIM4_DeInit                       stm8s_tim4
+     0000897C  _TIM4_TimeBaseInit                 stm8s_tim4
+     00008988  _TIM4_Cmd                          stm8s_tim4
+     000089A0  _TIM4_ITConfig                     stm8s_tim4
+     000089BE  _TIM4_UpdateDisableConfig          stm8s_tim4
+     000089D6  _TIM4_UpdateRequestConfig          stm8s_tim4
+     000089EE  _TIM4_SelectOnePulseMode           stm8s_tim4
+     00008A06  _TIM4_PrescalerConfig              stm8s_tim4
+     00008A11  _TIM4_ARRPreloadConfig             stm8s_tim4
+     00008A29  _TIM4_GenerateEvent                stm8s_tim4
+     00008A2D  _TIM4_SetCounter                   stm8s_tim4
+     00008A31  _TIM4_SetAutoreload                stm8s_tim4
+     00008A35  _TIM4_GetCounter                   stm8s_tim4
+     00008A39  _TIM4_GetPrescaler                 stm8s_tim4
+     00008A3D  _TIM4_GetFlagStatus                stm8s_tim4
+     00008A4D  _TIM4_ClearFlag                    stm8s_tim4
+     00008A52  _TIM4_GetITStatus                  stm8s_tim4
+     00008A73  _TIM4_ClearITPendingBit            stm8s_tim4
+     00008A78  ___sdcc_external_startup           _startup
+     00008BDA  ___fsdiv                           _fsdiv
+     00008C41  __mullong                          
+     00008CBD  ___fs2ulong                        _fs2ulong
+     00008D2E  ___ulong2fs                        _ulong2fs
+     00008DC0  ___fslt                            _fslt
 ASxxxx Linker V03.00/V05.40 + sdld,  page 12.
 
 Files Linked                              [ module(s) ]
@@ -213,18 +220,21 @@ Files Linked                              [ module(s) ]
 Libraries Linked                          [ object file ]
 
 ./build/Debug/no_entry_bundled.lib        [ stm8s_gpio.rel ]
+/usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ __mulsint2slong.rel ]
 /usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ malloc.rel ]
+/usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ _mulint.rel ]
 ./build/Debug/no_entry_bundled.lib        [ stm8s_clk.rel ]
+/usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ _divulong.rel ]
 /usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ _uint2fs.rel ]
 /usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ _fs2uint.rel ]
 ./build/Debug/no_entry_bundled.lib        [ stm8s_tim4.rel ]
 /usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ _startup.rel ]
 /usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ heap.rel ]
 /usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ _fsdiv.rel ]
+/usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ _mullong.rel ]
 /usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ _fs2ulong.rel ]
 /usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ _ulong2fs.rel ]
 /usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ _fslt.rel ]
-/usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ _divulong.rel ]
 
 ASxxxx Linker V03.00/V05.40 + sdld,  page 13.
 
